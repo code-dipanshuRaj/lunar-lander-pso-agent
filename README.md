@@ -14,7 +14,7 @@ This repository contains a PSO-optimized policy for the [LunarLander-v3](https:/
 ```
 src/
 ├── train_agent_PSO_locally.py    # Main PSO fine-tuning script
-├── evaluate_ddqn.py              # Compares DDQN vs PSO-tuned policies
+├── compare_pso_vs_ddqn.py              # Compares DDQN vs PSO-tuned policies
 ├── evaluate_policy.py            # Renders agent playing visually
 ├── policy_mine.py                # Neural net forward pass logic
 data/
@@ -43,17 +43,13 @@ python src/train_agent_PSO_locally.py --policyfile data/best_policy_ddqn.npy --p
 
 ### Evaluation (without render)
 ```bash
-python src/evaluate_ddqn.py
+python src/compare_pso_vs_ddqn.py
 ```
 
 ### Visual Evaluation
 ```bash
 python src/evaluate_policy.py
 ```
-
-## 🎮 Demo
-
-![Lunar Lander Agent](assets/demo.gif)
 
 ## 🧠 Author
 
